@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>肠衣门口菜单整合</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-app-bar">
+        <div class="top-app-bar__row">
+            <div class="top-app-bar__section">
+                <span class="material-icons-round">restaurant_menu</span>
+                <h1 class="top-app-bar__title">肠衣门口菜单整合</h1>
+            </div>
+            <div class="top-app-bar__section">
+                <button class="icon-button" id="searchBtn" aria-label="搜索">
+                    <span class="material-icons-round">search</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-bar" id="searchBar">
+        <span class="material-icons-round">search</span>
+        <input type="text" id="searchInput" placeholder="搜索餐厅或菜品...">
+        <button class="icon-button" id="closeSearch" aria-label="关闭">
+            <span class="material-icons-round">close</span>
+        </button>
+    </div>
+
+    <main class="main-content main-content--with-bottom-nav page-enter" id="mainContent">
+        <div class="filters">
+            <div class="filter-chips" id="filterChips"></div>
+        </div>
+
+        <section class="featured-section">
+            <h2 class="section-title">随机推荐</h2>
+            <div class="featured-cards" id="featuredCards"></div>
+        </section>
+
+        <section class="restaurants-section">
+            <h2 class="section-title">所有餐厅</h2>
+            <div class="restaurant-grid" id="restaurantGrid"></div>
+        </section>
+    </main>
+
+    <!-- 可预测返回手势指示器 -->
+    <div class="back-gesture-indicator" id="backGestureIndicator">
+        <span class="material-icons-round">arrow_back_ios</span>
+    </div>
+    
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="restaurantModal">
+            <div class="modal__header">
+                <button class="icon-button" id="closeModal" aria-label="关闭">
+                    <span class="material-icons-round">close</span>
+                </button>
+            </div>
+            <div class="modal__content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav__item bottom-nav__item--active" data-nav="home">
+            <div class="bottom-nav__item-icon-wrapper bottom-nav__item-icon-wrapper--active">
+                <span class="material-icons-round">home</span>
+            </div>
+            <span class="bottom-nav__item-label">主页</span>
+        </a>
+        <a href="javascript:void(0)" class="bottom-nav__item" data-nav="about" onclick="navigateWithTransition('about.html')">
+            <div class="bottom-nav__item-icon-wrapper">
+                <span class="material-icons-round">info</span>
+            </div>
+            <span class="bottom-nav__item-label">关于</span>
+        </a>
+    </nav>
+
+    <script src="capacitor-app-plugin.js"></script>
+    <script src="ripple.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+<script>
+function navigateWithTransition(url) {
+  if (document.startViewTransition) {
+    document.startViewTransition(() => {
+      window.location.href = url;
+    });
+  } else {
+    document.querySelector('main').classList.add('page-exit');
+    setTimeout(() => { window.location.href = url; }, 300);
+  }
+}
+</script>
+</body>
+</html>

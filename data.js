@@ -1535,7 +1535,495 @@ const restaurants = [
         ]
       }
     ]
+  },
+  {
+    id: 17,
+    name: "宗吉家",
+    cuisine: "日式料理/定食/面食",
+    icon: "ramen_dining",
+    rating: "",
+    location: "",
+    phone: "187-0590-5751",
+    tags: ["日式风味", "定食套餐", "面食丰富", "寿司海苔卷"],
+    featured: false,
+    menu: [
+      {
+        category: "定食+小蝶+汤",
+        items: [
+          { name: "温厚蛋肥牛饭", description: "", price: "27元" },
+          { name: "滑蛋肥牛饭", description: "", price: "28元" },
+          { name: "泡菜肥牛饭", description: "", price: "27元" },
+          { name: "芝士肥牛饭", description: "", price: "27元" },
+          { name: "秘制肥牛拌饭", description: "", price: "24元" }
+        ]
+      },
+      {
+        category: "双拼定食+小蝶+汤",
+        items: [
+          { name: "蜜烤鳗鱼+炙烧鸡胸肉", description: "招牌人气", price: "32元" },
+          { name: "日式肉酱海苔香卷", description: "", price: "18元" },
+          { name: "炙烧鸡胸肉海苔香卷", description: "", price: "18元" },
+          { name: "炙烧鸡胸肉照烧鸡腿肉", description: "", price: "18元" },
+          { name: "照烧松阪肉海苔香卷", description: "", price: "19元" },
+          { name: "芙蓉虾海苔香卷", description: "", price: "20元" }
+        ]
+      },
+      {
+        category: "寿司海苔卷",
+        items: [
+          { name: "4个装", description: "日式肉酱海苔香卷", price: "10元" },
+          { name: "8个装", description: "日式肉酱海苔香卷", price: "18元" },
+          { name: "芝士滑蛋奶盖蟹肉", description: "", price: "45元" },
+          { name: "日式小火锅（配米饭）", description: "", price: "42元" }
+        ]
+      },
+      {
+        category: "日式面食",
+        items: [
+          { name: "浓汤豚骨拉面", description: "", price: "26元" },
+          { name: "浓厚豚骨拉面（加长推荐）", description: "", price: "26元" },
+          { name: "担担肉酱拉面（加长推荐）", description: "", price: "26元" },
+          { name: "麻辣味噌拉面", description: "", price: "27元" },
+          { name: "牛肉寿喜乌冬面", description: "", price: "22元" }
+        ]
+      },
+      {
+        category: "单品（小吃）",
+        items: [
+          { name: "日式炸鸡块（糖心蛋）", description: "", price: "4元" },
+          { name: "温泉蛋", description: "", price: "4元" },
+          { name: "芝士片", description: "", price: "4元" },
+          { name: "韩式土豆泥", description: "", price: "6元" },
+          { name: "鲜奶布丁", description: "", price: "7元" },
+          { name: "味付螺蛳", description: "", price: "25元" },
+          { name: "冬阴功海鲜汤底", description: "", price: "30元" },
+          { name: "浓香咖喱猪排饭", description: "", price: "28元" },
+          { name: "日式叉烧饭", description: "", price: "25元" },
+          { name: "日式猪软骨饭", description: "", price: "27元" },
+          { name: "日式照烧松阪肉饭", description: "", price: "23元" },
+          { name: "芝士培根饭", description: "", price: "18元" },
+          { name: "日式培根饭", description: "（微辣）", price: "19元" }
+        ]
+      },
+      {
+        category: "汤品",
+        items: [
+          { name: "石锅肥牛豆腐汤", description: "", price: "25元" },
+          { name: "石锅肥牛番茄汤", description: "", price: "25元" },
+          { name: "冬日功海鲜汤底", description: "", price: "32元" }
+        ]
+      },
+      {
+        category: "饮料系列",
+        items: [
+          { name: "可乐、雪碧、芬达", description: "", price: "4元" },
+          { name: "王老吉、维他柠檬茶", description: "", price: "7元" },
+          { name: "焦糖布丁（精品）", description: "", price: "7元" },
+          { name: "自制日式叉烧（加长推荐）", description: "", price: "20元" },
+          { name: "可乐、雪碧", description: "", price: "8元" },
+          { name: "炸薯条", description: "", price: "7元" }
+        ]
+      },
+      {
+        category: "炙烤系列",
+        items: [
+          { name: "炙烤鸡肉+芝士培根", description: "照烧松阪肉", price: "25元" },
+          { name: "柠檬鸡腿+炙烤鸡肉", description: "", price: "26元" },
+          { name: "柠香鸡腿+炙烤鸡肉", description: "照烧松阪肉", price: "26元" }
+        ]
+      },
+      {
+        category: "炸物天妇罗",
+        items: [
+          { name: "炸虾天妇罗", description: "", price: "27元" },
+          { name: "炸鱿鱼天妇罗", description: "", price: "40元" }
+        ]
+      },
+      {
+        category: "和风炸鸡",
+        items: [
+          { name: "和风炸鸡", description: "", price: "23元" }
+        ]
+      },
+      {
+        category: "其他",
+        items: [
+          { name: "芝士鸡肉饭", description: "", price: "24元" },
+          { name: "芝士鸡肉面", description: "", price: "24元" },
+          { name: "浓香咖喱猪肉饭", description: "", price: "25元" }
+        ]
+      },
+      {
+        category: "特色推荐",
+        items: [
+          { name: "日式肉酱（加长推荐）", description: "", price: "20元" },
+          { name: "和风炸鸡", description: "", price: "22元" },
+          { name: "炸薯天妇罗", description: "", price: "22元" }
+        ]
+      },
+      {
+        category: "备注",
+        items: [
+          { name: "营业时间", description: "上午10:00 - 晚上10:00", price: "" },
+          { name: "联系电话", description: "187-0590-5751（微信同号）", price: "" },
+          { name: "地址", description: "一中店地址：长乐区吴航街道培青路22号", price: "" },
+          { name: "地址", description: "锦江店地址：长乐区航城街道锦江路一区10号（肯德基对面D-10号）", price: "" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 18,
+    name: "中国兰州拉面",
+    cuisine: "西北风味/兰州拉面",
+    icon: "ramen_dining",
+    rating: "",
+    location: "",
+    phone: "136-9681-9482",
+    tags: ["西北风味", "兰州拉面", "刀削面", "盖浇饭齐全"],
+    featured: false,
+    menu: [
+      {
+        category: "点餐牌（另加）",
+        items: [
+          { name: "羊肉串", description: "", price: "5元" },
+          { name: "牛肉", description: "", price: "12元" },
+          { name: "羊肉", description: "", price: "15元" },
+          { name: "煎蛋", description: "", price: "2元" },
+          { name: "打包盒", description: "", price: "1元" }
+        ]
+      },
+      {
+        category: "面食类",
+        items: [
+          { name: "牛肉拉面", description: "", price: "13元" },
+          { name: "牛杂拉面", description: "", price: "15元" },
+          { name: "羊肉拉面", description: "", price: "15元" },
+          { name: "鸡蛋拉面", description: "", price: "13元" },
+          { name: "酸菜牛肉面", description: "", price: "17元" },
+          { name: "红烧牛肉面", description: "", price: "19元" },
+          { name: "西红柿鸡蛋面", description: "", price: "15元" },
+          { name: "牛肉刀削面", description: "", price: "13元" },
+          { name: "羊肉刀削面", description: "", price: "15元" },
+          { name: "鸡蛋刀削面", description: "", price: "13元" },
+          { name: "酸菜刀削面", description: "", price: "17元" },
+          { name: "红烧刀削面", description: "", price: "19元" },
+          { name: "牛杂刀削面", description: "", price: "15元" },
+          { name: "麻辣牛肉面", description: "", price: "15元" },
+          { name: "香辣牛肉面", description: "", price: "15元" },
+          { name: "香辣刀削面", description: "", price: "15元" },
+          { name: "麻辣刀削面", description: "", price: "15元" },
+          { name: "酸辣牛肉面", description: "", price: "17元" },
+          { name: "牛杂炒拉面", description: "", price: "19元" },
+          { name: "牛肉炒拉面", description: "", price: "17元" },
+          { name: "羊肉炒拉面", description: "", price: "19元" },
+          { name: "鸡蛋炒拉面", description: "", price: "17元" },
+          { name: "鸡蛋炒刀削面", description: "", price: "17元" },
+          { name: "牛肉炒刀削面", description: "", price: "17元" },
+          { name: "羊肉炒刀削面", description: "", price: "19元" },
+          { name: "牛肉炒刀削面", description: "", price: "19元" },
+          { name: "牛杂炒刀削面", description: "", price: "19元" },
+          { name: "羊肉干拌面", description: "", price: "21元" },
+          { name: "牛肉干拌面", description: "", price: "19元" },
+          { name: "新疆拌面", description: "", price: "21元" },
+          { name: "牛肉烩面", description: "", price: "17元" },
+          { name: "羊肉烩面", description: "", price: "19元" },
+          { name: "炸酱面", description: "", price: "16元" },
+          { name: "牛肉凉面", description: "", price: "16元" },
+          { name: "牛肉蒸饺", description: "", price: "15元" }
+        ]
+      },
+      {
+        category: "炒饭、汤类",
+        items: [
+          { name: "兰州炒饭", description: "", price: "15元" },
+          { name: "羊肉炒饭", description: "", price: "15元" },
+          { name: "酸菜牛肉炒饭", description: "", price: "15元" },
+          { name: "牛肉炒饭", description: "", price: "13元" },
+          { name: "蛋炒饭", description: "", price: "13元" },
+          { name: "肉夹馍", description: "", price: "10元" },
+          { name: "煎饼", description: "", price: "5元" },
+          { name: "牛肉粉丝汤", description: "", price: "15元" },
+          { name: "西红柿蛋汤", description: "", price: "12元" },
+          { name: "羊肉汤", description: "", price: "17元" },
+          { name: "牛杂汤", description: "", price: "25元" },
+          { name: "羊肉泡馍", description: "", price: "19元" },
+          { name: "牛肉泡馍", description: "", price: "17元" },
+          { name: "牛肉水饺", description: "", price: "15元" }
+        ]
+      },
+      {
+        category: "炒粉",
+        items: [
+          { name: "鸡蛋炒粉", description: "", price: "16元" },
+          { name: "牛肉炒粉", description: "", price: "17元" },
+          { name: "羊肉炒粉", description: "", price: "19元" }
+        ]
+      },
+      {
+        category: "汤粉",
+        items: [
+          { name: "牛肉酸辣粉", description: "", price: "16元" },
+          { name: "羊肉酸辣粉", description: "", price: "18元" },
+          { name: "牛肉粉", description: "", price: "16元" },
+          { name: "羊肉粉", description: "", price: "18元" }
+        ]
+      },
+      {
+        category: "特色炒菜",
+        items: [
+          { name: "新疆大盘鸡", description: "", price: "100元" },
+          { name: "新疆小盘鸡", description: "", price: "80元" },
+          { name: "孜然牛肉", description: "", price: "45元" },
+          { name: "孜然羊肉", description: "", price: "50元" },
+          { name: "牙签羊肉", description: "", price: "55元" },
+          { name: "牙签牛肉", description: "", price: "50元" },
+          { name: "青椒炒牛肉", description: "", price: "40元" },
+          { name: "爆炒牛杂", description: "", price: "50元" },
+          { name: "洋葱炒牛肉", description: "", price: "40元" },
+          { name: "红烧牛肉", description: "", price: "45元" },
+          { name: "蘑菇炒牛肉", description: "", price: "40元" },
+          { name: "葱爆牛肉", description: "", price: "40元" },
+          { name: "土豆烧牛肉", description: "", price: "40元" },
+          { name: "蒜苔炒牛肉", description: "", price: "40元" },
+          { name: "木耳炒牛肉", description: "", price: "40元" }
+        ]
+      },
+      {
+        category: "凉菜、素炒菜",
+        items: [
+          { name: "凉拌土豆丝", description: "", price: "14元" },
+          { name: "凉拌西红柿", description: "", price: "14元" },
+          { name: "凉拌黄瓜", description: "", price: "14元" },
+          { name: "凉拌春菜", description: "", price: "12元" },
+          { name: "糖拌黄瓜", description: "", price: "14元" },
+          { name: "凉拌牛肉", description: "", price: "40元" },
+          { name: "酸辣白菜", description: "", price: "15元" },
+          { name: "青椒土豆丝", description: "", price: "15元" },
+          { name: "番茄炒蛋", description: "", price: "18元" },
+          { name: "葱花炒蛋", description: "", price: "18元" },
+          { name: "酸辣土豆丝", description: "", price: "15元" },
+          { name: "凉拌牛杂", description: "", price: "45元" }
+        ]
+      },
+      {
+        category: "盖浇饭/面",
+        items: [
+          { name: "牛杂盖浇饭/面", description: "", price: "20元" },
+          { name: "大盘鸡盖浇饭/面", description: "", price: "22元" },
+          { name: "洋葱羊肉盖浇饭/面", description: "", price: "19元" },
+          { name: "洋葱牛肉盖浇饭/面", description: "", price: "17元" },
+          { name: "木耳牛肉盖浇饭/面", description: "", price: "18元" },
+          { name: "木耳羊肉盖浇饭/面", description: "", price: "20元" },
+          { name: "红烧鸡块盖浇饭/面", description: "", price: "20元" },
+          { name: "孜然牛肉肉盖浇饭/面", description: "", price: "19元" },
+          { name: "孜然羊肉盖浇饭/面", description: "", price: "21元" },
+          { name: "青椒牛肉盖浇饭/面", description: "", price: "17元" },
+          { name: "青椒羊肉盖浇饭/面", description: "", price: "19元" },
+          { name: "番茄炒蛋盖浇饭/面", description: "", price: "17元" },
+          { name: "葱爆牛肉盖浇饭/面", description: "", price: "17元" },
+          { name: "蘑菇炒牛肉盖浇饭/面", description: "", price: "18元" },
+          { name: "蘑菇炒羊肉盖浇饭/面", description: "", price: "20元" },
+          { name: "蒜苔炒牛肉盖浇饭/面", description: "", price: "18元" },
+          { name: "蒜苔炒羊肉盖浇饭/面", description: "", price: "20元" }
+        ]
+      },
+      {
+        category: "备注",
+        items: [
+          { name: "订餐电话", description: "136-9681-9482", price: "" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 19,
+    name: "有饺劲",
+    cuisine: "传统小吃/手工水饺",
+    icon: "ramen_dining",
+    rating: "",
+    location: "长乐区步行街锦东酒店对面",
+    phone: "187-5070-2388",
+    tags: ["传统小吃", "手工水饺", "鲜肉现包", "面食/炒饭齐全"],
+    featured: false,
+    menu: [
+      {
+        category: "鲜饺系列（小份10个/中份15个/大份20个）",
+        items: [
+          { name: "玉米鲜饺", description: "小份/中份/大份", price: "12元/16元/20元" },
+          { name: "韭菜鲜饺", description: "小份/中份/大份", price: "12元/16元/20元" },
+          { name: "大葱鲜饺", description: "小份/中份/大份", price: "12元/16元/20元" },
+          { name: "香菇鲜饺", description: "小份/中份/大份", price: "12元/16元/20元" },
+          { name: "白菜鲜饺", description: "小份/中份/大份", price: "12元/16元/20元" },
+          { name: "鲜虾肉饺", description: "小份/中份/大份", price: "15元/22元/28元" }
+        ]
+      },
+      {
+        category: "煎饺系列（15个/20个）",
+        items: [
+          { name: "特色鲜肉煎饺", description: "15个/20个", price: "18元/22元" },
+          { name: "特色鲜虾煎饺", description: "15个/20个", price: "25元/30元" }
+        ]
+      },
+      {
+        category: "水饺（按斤）",
+        items: [
+          { name: "猪肉水饺", description: "1斤装", price: "22元/斤" },
+          { name: "鲜虾水饺", description: "1斤装", price: "30元/斤" }
+        ]
+      },
+      {
+        category: "面/粉类",
+        items: [
+          { name: "西红柿牛肉面/粉", description: "", price: "17元" },
+          { name: "酸菜牛肉面/粉", description: "", price: "17元" },
+          { name: "牛滑捞化", description: "", price: "15元" },
+          { name: "三鲜捞化", description: "", price: "15元" },
+          { name: "酸菜炒粉干", description: "", price: "15元" },
+          { name: "肉丝鸡蛋炒细粉", description: "", price: "15元" }
+        ]
+      },
+      {
+        category: "炒饭类",
+        items: [
+          { name: "扬州炒饭", description: "", price: "17元/份" }
+        ]
+      },
+      {
+        category: "盖浇饭类",
+        items: [
+          { name: "西红柿火腿盖浇饭", description: "", price: "17元/份" },
+          { name: "牛肉土豆咖喱饭", description: "", price: "20元/份" },
+          { name: "鲜虾咖喱饭", description: "", price: "20元/份" }
+        ]
+      },
+      {
+        category: "备注",
+        items: [
+          { name: "订餐热线", description: "18750702388", price: "" },
+          { name: "订餐地址", description: "长乐区步行街锦东酒店对面", price: "" },
+          { name: "特色说明", description: "手工水饺 鲜肉现包", price: "" }
+        ]
+      }
+    ]
+  },
+  {
+    id: 20,
+    name: "柒劲锅锅骨汤米粉",
+    cuisine: "酸辣风味/骨汤米粉",
+    icon: "ramen_dining",
+    rating: "",
+    location: "长乐区吴航街道资圣路128号",
+    phone: "173-0590-8769",
+    tags: ["酸辣风味", "骨汤米粉", "口味丰富", "火锅/酸菜/番茄/泡椒"],
+    featured: false,
+    menu: [
+      {
+        category: "滋补骨汤系列（不辣）",
+        items: [
+          { name: "大骨浓汤米粉", description: "", price: "14元/份" },
+          { name: "骨汤酥肉米粉", description: "", price: "18元/份" },
+          { name: "骨汤猪肝米粉", description: "", price: "18元/份" },
+          { name: "骨汤肉丸米粉", description: "", price: "16元/份" },
+          { name: "骨汤肉丝米粉", description: "", price: "18元/份" },
+          { name: "骨汤虾滑米粉", description: "", price: "23元/份" },
+          { name: "骨汤肥牛米粉", description: "", price: "22元/份" },
+          { name: "骨汤牛肉米粉", description: "", price: "25元/份" }
+        ]
+      },
+      {
+        category: "成都特色火锅系列（特辣）🌶️🔥",
+        items: [
+          { name: "劲爆火锅米粉", description: "", price: "16元/份" },
+          { name: "劲爆火锅猪肝米粉", description: "", price: "18元/份" },
+          { name: "劲爆火锅酥肉米粉", description: "", price: "20元/份" },
+          { name: "劲爆火锅肥牛米粉", description: "", price: "23元/份" },
+          { name: "劲爆火锅牛肉米粉", description: "", price: "25元/份" },
+          { name: "劲爆火锅虾滑米粉", description: "", price: "24元/份" },
+          { name: "劲爆火锅肉丸米粉", description: "", price: "18元/份" },
+          { name: "劲爆火锅肉丝米粉", description: "", price: "18元/份" },
+          { name: "劲爆火锅肥肠米粉", description: "", price: "25元/份" },
+          { name: "劲爆火锅虎皮凤爪米粉", description: "", price: "25元/份" }
+        ]
+      },
+      {
+        category: "脆爽酸菜系列（微辣）",
+        items: [
+          { name: "酸菜米粉", description: "", price: "15元/份" },
+          { name: "酸菜酥肉米粉", description: "", price: "20元/份" },
+          { name: "酸菜猪肝米粉", description: "", price: "18元/份" },
+          { name: "酸菜肉丸米粉", description: "", price: "16元/份" },
+          { name: "酸菜肉丝米粉", description: "", price: "18元/份" },
+          { name: "酸菜肥牛米粉", description: "", price: "23元/份" },
+          { name: "酸菜肥肠米粉", description: "", price: "25元/份" },
+          { name: "酸菜牛肉米粉", description: "", price: "25元/份" },
+          { name: "酸菜虾滑米粉", description: "", price: "24元/份" }
+        ]
+      },
+      {
+        category: "极鲜番茄系列（不辣）🍅",
+        items: [
+          { name: "番茄米粉", description: "", price: "14元/份" },
+          { name: "番茄酥肉米粉", description: "", price: "20元/份" },
+          { name: "番茄肉丸米粉", description: "", price: "16元/份" },
+          { name: "番茄肉丝米粉", description: "", price: "18元/份" },
+          { name: "番茄肥牛米粉", description: "", price: "24元/份" },
+          { name: "番茄虾滑米粉", description: "", price: "24元/份" },
+          { name: "番茄牛肉米粉", description: "", price: "25元/份" },
+          { name: "番茄猪肝米粉", description: "", price: "18元/份" }
+        ]
+      },
+      {
+        category: "贵州酸汤系列（不辣）",
+        items: [
+          { name: "酸汤米粉", description: "", price: "15元/份" },
+          { name: "酸汤酥肉米粉", description: "", price: "20元/份" },
+          { name: "酸汤猪肝米粉", description: "", price: "18元/份" },
+          { name: "酸汤鸡杂米粉", description: "", price: "16元/份" }
+        ]
+      },
+      {
+        category: "爽辣泡椒系列（特辣）🌶️🌶️",
+        items: [
+          { name: "泡椒米粉", description: "", price: "15元/份" },
+          { name: "泡椒酥肉米粉", description: "", price: "20元/份" },
+          { name: "泡椒猪肝米粉", description: "", price: "18元/份" },
+          { name: "泡椒鸡杂米粉", description: "", price: "20元/份" },
+          { name: "泡椒肉丸米粉", description: "", price: "16元/份" },
+          { name: "泡椒肥牛米粉", description: "", price: "23元/份" },
+          { name: "泡椒肥肠米粉", description: "", price: "25元/份" },
+          { name: "泡椒牛肉米粉", description: "", price: "25元/份" },
+          { name: "泡椒肉丝米粉", description: "", price: "18元/份" },
+          { name: "泡椒虎皮凤爪米粉", description: "", price: "25元/份" }
+        ]
+      },
+      {
+        category: "特色南乳炸鸡系列 🍗",
+        items: [
+          { name: "炸鸡排", description: "", price: "10元/份" },
+          { name: "炸鸡腿", description: "", price: "8元/份" },
+          { name: "炸鸡米花", description: "", price: "8元/份" },
+          { name: "香炸小酥肉", description: "", price: "8元/份" }
+        ]
+      },
+      {
+        category: "加料区（自由搭配）",
+        items: [
+          { name: "3元区", description: "炸蛋、木耳丝、海带丝、时令蔬菜、豆泡、鸭血", price: "3元" },
+          { name: "6元区", description: "猪肝、午餐肉、酥肉、鸡杂、卤丸子、肉丝、鹌鹑蛋、肉酱", price: "6元" },
+          { name: "9元区", description: "牛肉、虾滑、肥肠、虎皮凤爪", price: "9元" }
+        ]
+      },
+      {
+        category: "备注",
+        items: [
+          { name: "服务热线", description: "17305908769", price: "" },
+          { name: "地址", description: "长乐区吴航街道资圣路128号", price: "" },
+          { name: "品牌名称", description: "柒劲锅锅® 骨汤米粉", price: "" }
+        ]
+      }
+    ]
   }
 ];
 
-const cuisines = ["全部", "酸辣风味", "清淡口味", "麻辣鲜香", "传统小吃", "西北风味", "粤式风味", "西式快餐", "西式简餐", "甜品小食"];
+const cuisines = ["全部", "酸辣风味", "清淡口味", "麻辣鲜香", "传统小吃", "西北风味", "粤式风味", "西式快餐", "西式简餐", "甜品小食", "日式料理"];

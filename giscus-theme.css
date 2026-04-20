@@ -1,0 +1,175 @@
+.giscus-frame {
+  border-radius: var(--md-sys-shape-corner-extra-large) !important;
+  border: none !important;
+  box-shadow: var(--md-sys-elevation-level2) !important;
+  transition: box-shadow 0.2s ease !important;
+}
+
+.giscus textarea {
+  border-radius: var(--md-sys-shape-corner-medium) !important;
+  border: 1px solid var(--md-sys-color-outline) !important;
+  background-color: var(--md-sys-color-surface-container-low) !important;
+  color: var(--md-sys-color-on-surface) !important;
+  font-family: 'Noto Sans SC', sans-serif !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.giscus textarea:hover {
+  border-color: var(--md-sys-color-on-surface-variant) !important;
+}
+
+.giscus textarea:focus {
+  border-color: var(--md-sys-color-primary) !important;
+  box-shadow: 0 0 0 1px var(--md-sys-color-primary) !important;
+  outline: none !important;
+}
+
+.giscus .giscus-input {
+  border-radius: var(--md-sys-shape-corner-medium) !important;
+  background-color: var(--md-sys-color-surface-container) !important;
+  color: var(--md-sys-color-on-surface) !important;
+  transition: background-color 0.15s ease !important;
+}
+
+.giscus .giscus-button {
+  border-radius: var(--md-sys-shape-corner-full) !important;
+  background-color: var(--md-sys-color-primary) !important;
+  color: var(--md-sys-color-on-primary) !important;
+  border: none !important;
+  font-family: 'Noto Sans SC', sans-serif !important;
+  font-weight: 500 !important;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease !important;
+  box-shadow: var(--md-sys-elevation-level1) !important;
+}
+
+.giscus .giscus-button:hover {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 92%, transparent) !important;
+  box-shadow: var(--md-sys-elevation-level2) !important;
+}
+
+.giscus .giscus-button:active {
+  background-color: color-mix(in srgb, var(--md-sys-color-primary) 85%, transparent) !important;
+  box-shadow: var(--md-sys-elevation-level1) !important;
+  transform: scale(0.98) !important;
+}
+
+.giscus .giscus-comments {
+  color: var(--md-sys-color-on-surface) !important;
+}
+
+.giscus .giscus-comment {
+  background-color: var(--md-sys-color-surface-container-low) !important;
+  border-radius: var(--md-sys-shape-corner-large) !important;
+  margin-bottom: 12px !important;
+  padding: 16px !important;
+  transition: background-color 0.15s ease, transform 0.15s ease !important;
+  box-shadow: var(--md-sys-elevation-level1) !important;
+}
+
+.giscus .giscus-comment:hover {
+  background-color: var(--md-sys-color-surface-container) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: var(--md-sys-elevation-level2) !important;
+}
+
+.giscus .giscus-comment .giscus-header {
+  color: var(--md-sys-color-on-surface) !important;
+}
+
+.giscus .giscus-comment .giscus-body {
+  color: var(--md-sys-color-on-surface-variant) !important;
+}
+
+.giscus .giscus-timestamp {
+  color: var(--md-sys-color-outline) !important;
+  transition: color 0.15s ease !important;
+}
+
+.giscus .giscus-comment:hover .giscus-timestamp {
+  color: var(--md-sys-color-on-surface-variant) !important;
+}
+
+.giscus a {
+  color: var(--md-sys-color-primary) !important;
+  transition: color 0.15s ease !important;
+}
+
+.giscus a:hover {
+  color: color-mix(in srgb, var(--md-sys-color-primary) 80%, transparent) !important;
+}
+
+.giscus .giscus-label {
+  background-color: var(--md-sys-color-secondary-container) !important;
+  color: var(--md-sys-color-on-secondary-container) !important;
+  border-radius: var(--md-sys-shape-corner-small) !important;
+  border: none !important;
+  transition: background-color 0.15s ease !important;
+}
+
+.giscus .giscus-pagination {
+  color: var(--md-sys-color-on-surface-variant) !important;
+}
+
+.giscus .giscus-pagination button {
+  border-radius: var(--md-sys-shape-corner-full) !important;
+  transition: background-color 0.15s ease !important;
+}
+
+.giscus .giscus-pagination button:hover {
+  background-color: var(--md-sys-color-surface-container-high) !important;
+}
+
+.giscus .giscus-select {
+  border-radius: var(--md-sys-shape-corner-small) !important;
+  border: 1px solid var(--md-sys-color-outline) !important;
+  background-color: var(--md-sys-color-surface-container) !important;
+  color: var(--md-sys-color-on-surface) !important;
+  transition: border-color 0.15s ease !important;
+}
+
+.giscus .giscus-select:hover {
+  border-color: var(--md-sys-color-on-surface-variant) !important;
+}
+
+.giscus .giscus-select:focus {
+  border-color: var(--md-sys-color-primary) !important;
+  outline: none !important;
+}
+
+.giscus .giscus-tab {
+  border-radius: var(--md-sys-shape-corner-full) !important;
+  transition: background-color 0.15s ease !important;
+}
+
+.giscus .giscus-tab[aria-selected="true"] {
+  background-color: var(--md-sys-color-secondary-container) !important;
+  color: var(--md-sys-color-on-secondary-container) !important;
+}
+
+.giscus .giscus-tab:hover:not([aria-selected="true"]) {
+  background-color: var(--md-sys-color-surface-container-high) !important;
+}
+
+.giscus .giscus-reactions {
+  border-radius: var(--md-sys-shape-corner-large) !important;
+  transition: background-color 0.15s ease !important;
+}
+
+.giscus .giscus-reactions:hover {
+  background-color: var(--md-sys-color-surface-container) !important;
+}
+
+.giscus .giscus-reaction {
+  border-radius: var(--md-sys-shape-corner-full) !important;
+  border: 1px solid var(--md-sys-color-outline-variant) !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease !important;
+}
+
+.giscus .giscus-reaction:hover {
+  background-color: var(--md-sys-color-surface-container-high) !important;
+  border-color: var(--md-sys-color-outline) !important;
+}
+
+.giscus .giscus-reaction:active {
+  transform: scale(0.95) !important;
+}

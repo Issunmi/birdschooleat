@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>设置 - 肠衣门口菜单整合</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-app-bar">
+        <div class="top-app-bar__row">
+            <div class="top-app-bar__section">
+                <button class="icon-button" id="backBtn" aria-label="返回">
+                    <span class="material-icons-round">arrow_back</span>
+                </button>
+                <h1 class="top-app-bar__title">设置</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content main-content--with-bottom-nav page-enter" id="mainContent">
+        <section class="settings-user-card" id="userCard">
+            <div class="settings-user-card__avatar" id="userAvatar">
+                <span class="material-icons-round">person</span>
+            </div>
+            <div class="settings-user-card__info">
+                <h3 class="settings-user-card__name" id="userName">未登录</h3>
+                <p class="settings-user-card__desc" id="userDesc">登录后可在评论区发言</p>
+            </div>
+            <button class="settings-user-card__login-btn" id="loginBtn" onclick="Settings.login()">
+                <span class="material-icons-round">login</span>
+                <span>登录</span>
+            </button>
+            <button class="settings-user-card__logout-btn" id="logoutBtn" onclick="Settings.logout()" style="display: none;">
+                <span class="material-icons-round">logout</span>
+            </button>
+        </section>
+
+        <section class="settings-section">
+            <h2 class="settings-section__title">偏好设置</h2>
+            <div class="settings-list">
+                <div class="settings-item">
+                    <div class="settings-item__icon">
+                        <span class="material-icons-round">dark_mode</span>
+                    </div>
+                    <div class="settings-item__content">
+                        <h3 class="settings-item__title">深色模式</h3>
+                        <p class="settings-item__desc">跟随系统</p>
+                    </div>
+                    <div class="settings-item__action">
+                        <select class="settings-select" id="darkModeSelect">
+                            <option value="system">跟随系统</option>
+                            <option value="light">始终浅色</option>
+                            <option value="dark">始终深色</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-item">
+                    <div class="settings-item__icon">
+                        <span class="material-icons-round">notifications</span>
+                    </div>
+                    <div class="settings-item__content">
+                        <h3 class="settings-item__title">通知提醒</h3>
+                        <p class="settings-item__desc">接收新消息通知</p>
+                    </div>
+                    <div class="settings-item__action">
+                        <label class="settings-switch">
+                            <input type="checkbox" id="notificationSwitch">
+                            <span class="settings-switch__track"></span>
+                            <span class="settings-switch__thumb"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="settings-item" onclick="Settings.clearCache()">
+                    <div class="settings-item__icon">
+                        <span class="material-icons-round">delete_sweep</span>
+                    </div>
+                    <div class="settings-item__content">
+                        <h3 class="settings-item__title">清理缓存</h3>
+                        <p class="settings-item__desc">清除本地存储数据</p>
+                    </div>
+                    <div class="settings-item__action">
+                        <span class="material-icons-round">chevron_right</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-hero">
+                <div class="about-hero__icon-wrapper">
+                    <span class="material-icons-round about-hero__icon">restaurant_menu</span>
+                </div>
+                <h2 class="about-hero__title">前面忘了 后面也忘了</h2>
+                <p class="about-hero__subtitle">大家不觉得陈千语(终末地)很可爱吗</p>
+                <span class="about-hero__version">版本 1.1 release</span>
+            </div>
+
+            <div class="about-section">
+                <h3 class="about-section__title">这是干啥的</h3>
+                <p class="about-section__body">
+                    给所有幸福的鸟中学生们一个决定今天吃什么的简便方式，一是可以方便查看选啥吃，还有个随机推荐能随便选吃啥东西...好像没啥用wwwwwwww
+                    <br><br>
+                    以上的价格以及提供的产品仅用于参考，无法替代餐厅实际的价格。请以餐厅实际的价格为准。
+                    <br><br>
+                    最后构建时间:2026-4-18 00:01
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h3 class="about-section__title">开发者</h3>
+                <div class="about-developer">
+                    <div class="about-developer__avatar">
+                        <img src="avatar.png" alt="Issunmi Haichi" class="about-developer__avatar-img">
+                    </div>
+                    <div class="about-developer__info">
+                        <h4 class="about-developer__name">Issunmi Haichi</h4>
+                        <p class="about-developer__desc">希望大家每天都开开心心mio~</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="about-footer">
+                <p class="about-footer__text">© 2026 Issunmi Haichi</p>
+                <p class="about-footer__text">祝大家考试都顺利~~</p>
+            </footer>
+        </section>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav__item" data-nav="home" onclick="navigateWithTransition('index.html')">
+            <div class="bottom-nav__item-icon-wrapper">
+                <span class="material-icons-round">home</span>
+            </div>
+            <span class="bottom-nav__item-label">主页</span>
+        </a>
+        <a href="settings.html" class="bottom-nav__item bottom-nav__item--active" data-nav="settings">
+            <div class="bottom-nav__item-icon-wrapper bottom-nav__item-icon-wrapper--active">
+                <span class="material-icons-round">settings</span>
+            </div>
+            <span class="bottom-nav__item-label">设置</span>
+        </a>
+    </nav>
+
+    <script src="ripple.js"></script>
+    <script src="settings.js"></script>
+<script>
+function navigateWithTransition(url) {
+  if (document.startViewTransition) {
+    document.startViewTransition(() => {
+      window.location.href = url;
+    });
+  } else {
+    document.querySelector('main').classList.add('page-exit');
+    setTimeout(() => { window.location.href = url; }, 300);
+  }
+}
+</script>
+<script>
+document.getElementById('backBtn').addEventListener('click', () => {
+  history.back();
+});
+</script>
+</body>
+</html>

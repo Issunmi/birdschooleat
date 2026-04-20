@@ -6,7 +6,11 @@
     '.restaurant-card',
     '.filter-chip',
     '.icon-button',
-    '.bottom-nav__item-icon-wrapper'
+    '.bottom-nav__item-icon-wrapper',
+    '.restaurant-detail__tab',
+    '#waline-container .wl-btn',
+    '#waline-container .wl-action',
+    '#waline-container .wl-page-button'
   ];
 
   var SELECTOR_STR = SELECTORS.join(', ');
